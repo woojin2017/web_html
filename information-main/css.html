@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Information</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+      <h1><a href="index.html">Information</a></h1>
+
+      <div id="grid">
+        <ul id=homeul>
+          <li><a href="programing.html">프로그래밍</a></li>
+          <li><a href="travel.html">여행</a></li>
+          <li><a href="restaurant.html">맛집</a></li>
+          <li><a href="site.html">사이트</a></li>
+          <li><a href="etc.html">기타</a></li>
+        </ul>
+        <div>
+          <h2>CSS 기본</h2>
+          <ol>
+            <li>class="" id="" - 지정해서 꾸며줄 때 사용
+            <br>style 작성 할 때
+            <br>class는 .class명{}
+            <br>id는 #id명{}으로 작성</li>
+
+            <br>
+
+            <li>예) a{ color:red;} 일 때
+            <br>a는 selector(태그,class,id)
+            <br>{}는 declaration(선언 또는 효과)를 줄 값을 지정
+            <br>color은 property 효과
+            <br>red는 vlaule(propety의 값) 어떤 효과를 줄건지</li>
+          </ol>
+
+          <h2>CSS 종류</h2>
+          <ul>
+            <li>지정된 글의 색상 변경(빨간) - color:red;</li>
+            <li>글 장식 (삭제) - text-decoration:none;</li>
+            <li>글 크기 지정(45크기) - font-size: 45px;</li>
+            <li>글 위치 지정(가운데) - text-align center;</li>
+            <li>글 테두리 효과(위치 색 두께 선) - border-bottom: red 1px solid;
+            <br>(테두리 위치는 꼭 안해도 무방)</li>
+            <li>화면에서 차지하는 공간 - display:
+            <br>grid; (격자)
+            <br>inline; (빈공간 삭제)
+            <br>block; (빈 공간 만들기)
+            <br>none; (안 보이게 하기)</li>
+            </ul>
+
+            <h2>그리드(Grid)</h2>
+              <div> 그리드를 사용하기 위해서 먼저 작성하기
+                <br>display: grid;
+                <br>grid-template-columns: 150px 1fr;
+                <br>
+                <br>columns 열 <br> rows 행
+                <br>
+                <br>2개로 나눌 경우 크기 지정 두개 150px 1fr(비율)
+                <br>1fr 1fr 1:1 <br> 1fr 2fr 1:2
+              </div>
+
+              <h3>grid 지정</h3>
+
+            <img src="img/1.png" width="200px">
+            <ul>
+              <li>테두리와 콘텐츠 사이 20픽셀 padding: 20px;</li>
+              <li>테두리와 테두리 사이 20픽셀 margin: 20px</li>
+              <li>padding - left: 20px; padding - right: 20px; 으로 한쪽만 가능 (margin도 같음)</li>
+            </ul>
+
+
+            <h2>미디어 쿼리</h2>
+            <div>간단한 설명: c언어 java의 if문(조건문)
+            <br>예시)
+            <br>@media(max-width:800px){
+            <br>#grid{
+            <br>display:block;}
+            <p>
+              min은 최소 width > 800p이면 밑에 코드 실행
+              <br>max는 최대 width < 800px이면 밑에 코드 실행
+              <br>#grid는 위에 @media(조건)에 해당할 때 작동할 태그 class 또는 id 명
+              <br>{} 안에는 동작 행동 또는 변경 할 것
+            </p>
+             </div>
+
+          <h2>중복되는 style</h2>
+          <div> (link rel="stylesheet" href="파일 명.css") - css파일과 연결 시켜줌</div>
+        </div>
+      </div>
+  </body>
+</html>
